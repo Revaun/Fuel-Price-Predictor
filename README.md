@@ -69,10 +69,9 @@ streamlit run fuel_app.py
 ---
 
 ## 📸 Screenshots
-(Replace placeholders with fresh snapshots once deployed)
-- Banner landing page
-- Forecast chart
-- Scatter plot with RMSE/MAE
+![Banner](docs/screenshots/banner.png)
+![Forecast Chart](docs/screenshots/forecast.png)
+![Scatter Plot](docs/screenshots/scatter.png)
 
 ---
 
