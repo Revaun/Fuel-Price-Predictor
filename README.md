@@ -69,9 +69,16 @@ streamlit run fuel_app.py
 ---
 
 ## 📸 Screenshots
-![Banner](docs/screenshots/banner.png)
-![Forecast Chart](docs/screenshots/forecast.png)
-![Scatter Plot](docs/screenshots/scatter.png)
+
+<img src="docs/screenshots/banner.png" alt="Banner" width="400"/>
+
+---
+
+<img src="docs/screenshots/forecast.png" alt="Forecast Chart" width="400"/>
+
+---
+
+<img src="docs/screenshots/scatter.png" alt="Scatter Plot" width="400"/>
 
 ---
 
