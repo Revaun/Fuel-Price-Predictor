@@ -1,6 +1,6 @@
 # ⛽ Fuel Price Predictor 🚀
 
-![Banner](https://images.unsplash.com/photo-1503376780353-7e6692767b70)  
+![Banner](assets/optimus-style-banner.png) 
 *A professional dashboard for forecasting fuel prices, built with AWS SageMaker + Streamlit.*
 
 ---
@@ -46,9 +46,8 @@ cd Fuel-Price-Predictor
 pip install -r requirements.txt
 streamlit run fuel_app.py
 
----
 
-📂 Project Structure
+📂 Project Structure 
 
 data/                # Raw and cleaned datasets
 output/              # Model artifacts and scripts
@@ -58,21 +57,35 @@ fuel_app.py          # Streamlit app
 requirements.txt     # Dependencies
 README.md            # Project overview
 
----
+
+🛠 Issues Faced & Resolutions (SageMaker Project)
+ImportError: Transformer not found in SageMaker SDK  
+Issue: Tried to use Batch Transform, but the sagemaker package didn’t expose the Transformer class.
+Resolution: Upgraded the SageMaker Python SDK. As a cost‑saving alternative, ran predictions locally in Jupyter using the exported XGBoost model artifact (xgboost_model.json).
+
+Free Tier Credits Exhausted  
+Issue: Fast instance types quickly consumed AWS free tier credits.
+Resolution: Shut down endpoints and notebook instances immediately after use. Switched to local inference with XGBoost to avoid further charges.
+
+Model Artifact Handling  
+Issue: SageMaker training produced model.tar.gz containing a raw xgboost-model file. Needed to extract and load it manually.
+Resolution: Extracted the artifact, loaded with xgb.Booster(), and used DMatrix for predictions locally.
+
+Evaluation & Visualization  
+Issue: Needed to validate predictions without SageMaker endpoints.
+Resolution: Computed RMSE (~1.5 USD/Liter) against test data locally and visualized results with a scatter plot + diagonal “perfect prediction” line.
+
+AWS Resource Cleanup  
+Issue: Risk of incurring hidden charges from leftover endpoints, EC2 instances, or EBS volumes.
+Resolution: Wrote and ran a PowerShell cleanup script to terminate all SageMaker endpoints, stop notebooks, kill EC2 instances, and delete unattached volumes.
 
 ✨ Author
 Built by Revaun — showcasing ML engineering, cloud ops, and app deployment skills.
 
----
+🔧 Notes
+The banner uses a royalty‑free Unsplash image (energy/city theme). You can swap the link for any other professional photo (fuel, transport, skyline, technology).
 
-### 🔧 Notes
-- The banner uses a royalty‑free Unsplash image (energy/city theme). You can swap the link for any other professional photo (fuel, transport, skyline, technology).  
-- Once you deploy to Streamlit Cloud, capture **fresh screenshots** and drop them into the README under “📸 Screenshots.”  
+Once you deploy to Streamlit Cloud, capture fresh screenshots and drop them into the README under “📸 Screenshots.”
 
-This version looks polished, recruiter‑ready, and visually appealing.  
-
-Do you want me to also prepare a **LinkedIn post draft** that matches this README style, so you can share the project with a strong professional narrative once the app link is live?
-
-# Fuel-Price-Predictor
-End-to-end ML project predicting global fuel prices using AWS SageMaker and Streamlit.
-
+📌 Summary
+This project demonstrates end‑to‑end ML engineering with AWS SageMaker and Streamlit, plus real DevOps problem‑solving (SDK issues, cost management, artifact handling, evaluation, and cleanup). It’s polished, recruiter‑ready, and visually appealing.
