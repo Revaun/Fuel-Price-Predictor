@@ -1,0 +1,10 @@
+import pandas as pd
+
+# Load your cleaned dataset
+df = pd.read_csv("fuel_prices_clean.csv")
+
+# Example: take the first 100 rows as "new data"
+df_new = df.head(100)
+
+# Save to new_data.csv
+df_new.to_csv("new_data.csv", index=False)

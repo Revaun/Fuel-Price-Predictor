@@ -1,0 +1,18 @@
+﻿# Ignore Python virtual environments
+venv/
+venv-sagemaker/
+venv-sagemaker-311/
+streamlit-env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore model artifacts and logs
+*.tar.gz
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
