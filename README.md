@@ -46,6 +46,7 @@ cd Fuel-Price-Predictor
 pip install -r requirements.txt
 streamlit run fuel_app.py
 ```
+---
 
 📁 Project Structure
 - data/              # Raw and cleaned datasets
@@ -56,6 +57,8 @@ streamlit run fuel_app.py
 - requirements.txt   # Dependencies
 - README.md          # Project overview
 
+---
+
 🧩 Issues Faced & Resolutions
 - SDK ImportError → Upgraded SageMaker SDK; used local inference as fallback
 - Free Tier Credits Exhausted → Shut down endpoints quickly; switched to local predictions
@@ -63,21 +66,32 @@ streamlit run fuel_app.py
 - Evaluation & Visualization → Computed RMSE (~1.5 USD/Liter), plotted scatter with diagonal line
 - AWS Resource Cleanup → Wrote PowerShell script to terminate endpoints and delete unused volumes
 
+---
+
+
 📸 Screenshots
 (Replace placeholders with fresh snapshots once deployed)
 - Banner landing page
 - Forecast chart
 - Scatter plot with RMSE/MAE
 
+---
+
 ✨ Author
 Built by Revaun — showcasing ML engineering, cloud ops, and app deployment skills.
+
+---
 
 🔧 Notes
 - Banner uses a custom futuristic truck design.
 - After deployment, update screenshots in the “📸 Screenshots” section.
+
+---
 
 📌 Summary
 This project demonstrates ML engineering + DevOps awareness:
 - Training and deployment on SageMaker
 - Cost management and cleanup scripts
 - Interactive app delivery with Streamlit
+
+---
