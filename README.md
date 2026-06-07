@@ -48,7 +48,7 @@ streamlit run fuel_app.py
 ```
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 - data/              # Raw and cleaned datasets
 - output/            # Model artifacts and scripts
 - scripts/           # Training, preprocessing, deployment scripts
@@ -59,7 +59,7 @@ streamlit run fuel_app.py
 
 ---
 
-🧩 Issues Faced & Resolutions
+## 🧩 Issues Faced & Resolutions
 - SDK ImportError → Upgraded SageMaker SDK; used local inference as fallback
 - Free Tier Credits Exhausted → Shut down endpoints quickly; switched to local predictions
 - Model Artifact Handling → Extracted model.tar.gz, loaded with xgb.Booster()
@@ -68,8 +68,7 @@ streamlit run fuel_app.py
 
 ---
 
-
-📸 Screenshots
+## 📸 Screenshots
 (Replace placeholders with fresh snapshots once deployed)
 - Banner landing page
 - Forecast chart
@@ -77,21 +76,19 @@ streamlit run fuel_app.py
 
 ---
 
-✨ Author
+## ✨ Author
 Built by Revaun — showcasing ML engineering, cloud ops, and app deployment skills.
 
 ---
 
-🔧 Notes
+## 🔧 Notes
 - Banner uses a custom futuristic truck design.
 - After deployment, update screenshots in the “📸 Screenshots” section.
 
 ---
 
-📌 Summary
+## 📌 Summary
 This project demonstrates ML engineering + DevOps awareness:
 - Training and deployment on SageMaker
 - Cost management and cleanup scripts
 - Interactive app delivery with Streamlit
-
----
