@@ -47,6 +47,7 @@ pip install -r requirements.txt
 streamlit run fuel_app.py
 
 
+
 📂 Project Structure 
 
 data/                # Raw and cleaned datasets
