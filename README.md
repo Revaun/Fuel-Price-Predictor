@@ -46,6 +46,8 @@ cd Fuel-Price-Predictor
 pip install -r requirements.txt
 streamlit run fuel_app.py
 
+---
+
 📂 Project Structure
 
 data/                # Raw and cleaned datasets
@@ -56,10 +58,10 @@ fuel_app.py          # Streamlit app
 requirements.txt     # Dependencies
 README.md            # Project overview
 
+---
 
 ✨ Author
 Built by Revaun — showcasing ML engineering, cloud ops, and app deployment skills.
-
 
 ---
 
@@ -70,3 +72,7 @@ Built by Revaun — showcasing ML engineering, cloud ops, and app deployment ski
 This version looks polished, recruiter‑ready, and visually appealing.  
 
 Do you want me to also prepare a **LinkedIn post draft** that matches this README style, so you can share the project with a strong professional narrative once the app link is live?
+
+# Fuel-Price-Predictor
+End-to-end ML project predicting global fuel prices using AWS SageMaker and Streamlit.
+
