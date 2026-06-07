@@ -45,14 +45,15 @@ cd Fuel-Price-Predictor
 pip install -r requirements.txt
 streamlit run fuel_app.py
 
-📂 Project Structure 
-data/              # Raw and cleaned datasets
-output/            # Model artifacts and scripts
-scripts/           # Training, preprocessing, deployment scripts
-docs/              # Proof snapshots and notebooks
-fuel_app.py        # Streamlit app
-requirements.txt   # Dependencies
-README.md          # Project overview
+📁 Project Structure
+- data/              # Raw and cleaned datasets
+- output/            # Model artifacts and scripts
+- scripts/           # Training, preprocessing, deployment scripts
+- docs/              # Proof snapshots and notebooks
+- fuel_app.py        # Streamlit app
+- requirements.txt   # Dependencies
+- README.md          # Project overview
+
 🧩 Issues Faced & Resolutions
 - SDK ImportError → Upgraded SageMaker SDK; used local inference as fallback
 - Free Tier Credits Exhausted → Shut down endpoints quickly; switched to local predictions
