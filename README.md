@@ -1,6 +1,11 @@
 # ⛽ Fuel Price Predictor 🚀
 
-![Banner](assets/optimus-style-banner.png) 
+[![Made with AWS SageMaker](https://img.shields.io/badge/Made%20with-AWS%20SageMaker-orange)](https://aws.amazon.com/sagemaker/)
+[![Deployed on Streamlit](https://img.shields.io/badge/Deployed%20on-Streamlit-brightgreen)](https://fuel-price-predictorgit-qnptezbcqdjagxg4394xct.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+![Banner](assets/optimus-style-banner.png)  
 *A professional dashboard for forecasting fuel prices, built with AWS SageMaker + Streamlit.*
 
 ---
@@ -12,6 +17,9 @@
   - Scatter plot with RMSE/MAE error metrics  
   - Downloadable predictions (`predictions.csv`)  
 - **Professional UI**: Banner, collapsible sections, and author signature  
+- **Multi‑fuel Support**: Petrol, Diesel, LPG forecasts  
+- **Download Options**: Export historical & forecast data as CSV  
+- **Error Metrics**: RMSE, MAE displayed for transparency  
 
 ---
 
@@ -28,11 +36,12 @@
 ---
 
 ## 📸 Screenshots
-*(Replace placeholders with your new snapshots once deployed)*
 
-- Landing page with banner + signature  
-- Forecast chart with predictions  
-- Scatter plot with RMSE/MAE  
+<p align="center">
+  <img src="docs/screenshots/banner.png" alt="Banner" width="400"/>
+  <img src="docs/screenshots/forecast.png" alt="Forecast Chart" width="400"/>
+  <img src="docs/screenshots/scatter.png" alt="Scatter Plot" width="400"/>
+</p>
 
 ---
 
