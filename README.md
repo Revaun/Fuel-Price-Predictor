@@ -39,7 +39,7 @@
 ## ⚙️ Run Locally
 Clone the repo and install dependencies:
 
-```bash
+bash
 git clone https://github.com/Revaun/Fuel-Price-Predictor.git
 cd Fuel-Price-Predictor
 pip install -r requirements.txt
