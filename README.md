@@ -46,14 +46,14 @@ pip install -r requirements.txt
 streamlit run fuel_app.py
 
 📂 Project Structure 
+data/              # Raw and cleaned datasets
+output/            # Model artifacts and scripts
+scripts/           # Training, preprocessing, deployment scripts
+docs/              # Proof snapshots and notebooks
+fuel_app.py        # Streamlit app
+requirements.txt   # Dependencies
+README.md          # Project overview
 
-data/                # Raw and cleaned datasets
-output/              # Model artifacts and scripts
-scripts/             # Training, preprocessing, deployment scripts
-docs/                # Proof snapshots and notebooks
-fuel_app.py          # Streamlit app
-requirements.txt     # Dependencies
-README.md            # Project overview
 
 
 🛠 Issues Faced & Resolutions (SageMaker Project)
@@ -76,6 +76,15 @@ Resolution: Computed RMSE (~1.5 USD/Liter) against test data locally and visuali
 AWS Resource Cleanup  
 Issue: Risk of incurring hidden charges from leftover endpoints, EC2 instances, or EBS volumes.
 Resolution: Wrote and ran a PowerShell cleanup script to terminate all SageMaker endpoints, stop notebooks, kill EC2 instances, and delete unattached volumes.
+
+📸 Screenshots
+(Replace placeholders with fresh snapshots once deployed)
+
+Banner landing page
+
+Forecast chart
+
+Scatter plot with RMSE/MAE
 
 ✨ Author
 Built by Revaun — showcasing ML engineering, cloud ops, and app deployment skills.
