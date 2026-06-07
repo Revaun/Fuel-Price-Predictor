@@ -23,8 +23,7 @@
 ---
 
 ## 🚀 Live Demo
-👉 [Fuel Price Predictor on Streamlit Cloud](https://fuel-price-predictor.streamlit.app)  
-*(Link will be active after deployment)*
+👉 [Fuel Price Predictor on Streamlit Cloud](https://fuel-price-predictorgit-qnptezbcqdjagxg4394xct.streamlit.app/)
 
 ---
 
